@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.jumbo {
+  margin-top: 20px;
+  padding : 20px;
+  background-image: url(./background.jpg);
+  background-size: cover;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }

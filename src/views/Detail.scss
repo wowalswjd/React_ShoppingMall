@@ -1,0 +1,44 @@
+// scss를 쓰는 이유? css를 프로그래밍언어스럽게 개발하기 위해서
+
+
+$maincolor : #ff0000;
+
+.red {
+    color: $maincolor;
+}
+
+@mixin func() {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius:5px;
+    max-width: 500px;
+    width:100%;
+    margin: auto;
+}
+
+.my-alert {
+    @include func()
+}
+
+.my-alert2 {
+    @extend .my-alert;
+    // sass문법->.my-alert의 속성을 복사붙여넣기
+    background: #ffe591;
+}
+
+.my-alert p {
+    margin-bottom:0;
+}
+
+.wow-enter {
+    // 애니메이션 시작할 때 투명도 0이었다가
+    opacity: 0;
+}
+
+.wow-enter-active {
+    // 애니메이션 동작 때 투명도 1로 변경
+    opacity: 1;
+    // 서서히 변경하게 함
+    transition: all 500ms;
+}
+
